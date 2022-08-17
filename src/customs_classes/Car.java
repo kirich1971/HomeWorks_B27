@@ -2,6 +2,7 @@ package customs_classes;
 
 public class Car {
 
+
     String  model;
     int     year;
     String  color;
@@ -9,7 +10,7 @@ public class Car {
     double  mileage;
 
 
-    @Override
+
     public String toString() {
         return "Car{" +
                 "model='" + model + '\'' +
@@ -58,10 +59,7 @@ public class Car {
     }
 
     public boolean isLow() {
-        if (fuelLevel <= 25) {
-            return true;
-        }
-        return false;
+        return fuelLevel <= 25;
     }
 
 
